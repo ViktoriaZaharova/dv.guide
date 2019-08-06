@@ -1,0 +1,912 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+@media screen and (max-width: 1800px)
+  .content
+    .medals
+      .medals_content
+        //flex-wrap: wrap
+        &-left
+          img
+            position: relative
+            margin-left: 0
+            width: auto
+            max-width: 100%
+
+        &-center
+          min-width: 0
+          margin: 0 20px
+
+@media screen and (max-width: 1300px)
+  .content
+    .medals
+      .medals_content
+        flex-wrap: wrap
+        justify-content: space-around
+        &-center
+          width: 50%
+          margin: 0
+          button
+            width: 300px
+            height: auto
+            margin-bottom: 20px
+          .presents
+            margin-bottom: 15px
+        &-right
+          width: 100%
+          margin-top: 20px
+          .block-img
+            margin-top: 0
+            text-align: center
+          h6
+            width: 100%
+            margin: 30px auto 20px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  header
+    .wrapper
+      .header_bottom
+        margin-top: 20px
+        .container
+          .header_bottom-img
+            max-width: 600px
+            left: 0
+            right: 0
+            margin: 0 110px
+    .block_logo
+      margin-top: 30px
+
+  .head_menu
+    height: auto
+    padding-bottom: 15px
+    .close
+      margin: 22px auto 20px
+    ul
+      max-width: 100%
+      padding: 0 15px
+      flex-wrap: wrap
+      justify-content: space-around
+
+  .content
+    .greeting
+      &_content
+        .carousel_item
+          display: flex
+          justify-content: center
+          align-items: center
+          .greeting_content-left
+            display: flex
+            flex-direction: column
+            float: none
+            margin-top: 0
+            .top_text
+              margin-bottom: 70px
+          .greeting_content-right
+            display: flex
+            flex-direction: column
+            float: none
+            .block-text
+              bottom: 50px
+              left: 55px
+              h4
+                font-size: 30px
+                line-height: 30px
+              p
+                font-size: 18px
+                line-height: 20px
+    .partners
+      .container
+        p
+          margin: 20px 0 30px 0
+    .support
+      -webkit-background-size: cover
+      background-size: cover
+    .traveling
+      .traveling_content
+        .traveling_content-left
+          .traveling_carousel
+            padding: 0 50px
+            .owl-nav
+              .owl-prev
+                right: 20px
+              .owl-next
+                left: 20px
+
+  .container
+    width: 100%
+    padding: 0 15px
+
+@media screen and (max-width: 1070px)
+  header .wrapper .header_bottom .container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    .header_bottom-left, .header_bottom-right
+      display: flex
+      flex-direction: column
+      float: none
+  .content
+    .project_content-left
+      img
+        top: 0
+    .greeting
+      &_content
+        .carousel_item
+          .greeting_content-left
+            .top_text
+              p
+                font-size: 16px
+              span
+                font-size: 50px
+                line-height: 70px
+            .bottom_text
+              display: flex
+              flex-direction: row
+              justify-content: space-around
+              flex-wrap: wrap
+              a
+                font-size: 14px
+                margin-right: 0
+                line-height: 16px
+    .support
+      .container
+        a
+          font-size: 80px
+          line-height: 90px
+    .maps
+      .container
+        .maps_left
+          img
+            bottom: 0
+            position: relative
+    .maps_description
+      padding: 50px 0
+      .container
+        flex-wrap: wrap
+        justify-content: space-around
+
+  footer
+    .container
+      .footer_content-center
+        max-width: 460px
+        .top
+          justify-content: space-between
+          width: 100%
+          .phone
+            margin-right: 0
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  header
+    .wrapper
+      height: auto
+      .header_top-right
+        .phone
+          margin: 10px 0
+      .header_top-left
+        .social
+          margin-top: 10px
+      .header_bottom
+        .container
+          .header_bottom-left
+            a
+              line-height: 20px
+            h3
+              font-size: 30px
+              line-height: 33px
+              span
+                width: 54px
+                height: 38px
+            p
+              margin: 15px 0 25px 0
+            .presents
+              margin-bottom: 30px
+          .header_bottom-right
+            margin-bottom: 10px
+            a
+              line-height: 20px
+            button
+              margin: 29px 0 20px 0
+            ul
+              margin-bottom: 20px
+              li
+                line-height: 20px
+                span
+                  font-size: 35px
+                  line-height: 36px
+                &:nth-child(2)
+                  margin: 10px 0
+          .header_bottom-img
+            max-width: 400px
+            margin: 0 200px
+            top: 0
+
+.content
+  .project
+    padding: 0 15px
+    .project_content-right
+      padding-left: 0
+      margin-bottom: 100px
+      .line-links
+        .presents
+          margin-right: 15px
+  .greeting
+    &_content
+      .carousel_item
+        .greeting_content-left
+          padding: 0 10px
+          .top_text
+            margin-bottom: 40px
+            p
+              line-height: 22px
+  .partners_description
+    padding-top: 30px
+    .container
+      .partners_description-left
+        padding-right: 50px
+        .number
+          font-size: 250px
+      .partners_description-right
+        padding-left: 40px
+        p
+          margin-bottom: 40px
+  .maps
+    .container
+      .maps_left
+        p
+          font-size: 14px
+          line-height: 22px
+        button
+          font-size: 16px
+          width: 350px
+      .maps_right
+        p
+          font-size: 14px
+          line-height: 22px
+  .maps_description
+    h6
+      width: 100%
+      padding: 0 10px
+    .container
+      margin-top: 30px
+      .item
+        margin: 0 10px 20px 10px
+  .done
+    padding: 50px 0
+    .container
+      .block-img
+        margin-bottom: 30px
+      p
+        font-size: 16px
+        line-height: 22px
+        width: 100%
+      h3
+        margin: 53px 0 23px 0
+      .carousel_quality
+        width: 100%
+        padding: 0 30px
+        .owl-nav
+          .owl-prev
+            right: 4%
+          .owl-next
+            left: 4%
+      button
+        margin: 43px 0 34px 0
+        width: 300px
+
+  button
+    font-size: 18px
+
+@media screen and (max-width: 920px)
+  .content
+    .traveling
+      p
+        font-size: 16px
+      .traveling_content
+        margin-top: 30px
+        flex-direction: column
+        align-items: center
+        .traveling_content-left, .traveling_content-right
+          width: 100%
+        .traveling_content-left
+          margin-bottom: 20px
+          h5
+            margin-bottom: 35px
+
+  footer
+    padding: 40px 0 30px
+    .container
+      flex-wrap: wrap
+      justify-content: space-around
+      .footer_content
+        &-center
+          .foot-mnu
+            li
+              a
+                font-size: 14px
+                line-height: 18px
+        &-right
+          margin-top: 20px
+          align-items: center
+          flex-direction: row
+          width: 200px
+          .social
+            margin: 0 15px 0 0
+          .block-img
+            margin-bottom: 0
+            flex-direction: row
+            align-items: center
+            span
+              margin: 0 0 0 10px
+
+@media only screen and (max-width : 880px)
+  header
+    .wrapper
+      .header_bottom
+        .container
+          .header_bottom-img
+            max-width: 300px
+            margin: 0 220px
+  .content
+    .project
+      .project_content-left
+        display: flex
+        align-items: center
+        justify-content: center
+        img
+          position: relative
+      .project_content-right
+        margin-bottom: 70px
+        p
+          font-size: 14px
+          line-height: 21px
+        .line-links
+          margin-top: 15px
+          a
+            font-size: 14px
+            line-height: 20px
+
+
+  h2
+    margin-bottom: 25px
+    font-size: 50px
+
+@media only screen and (max-width : 800px)
+  header
+    .wrapper
+      -webkit-background-size: cover
+      background-size: cover
+      .header_top
+        padding: 15px 20px 0 20px
+        &-left
+          max-width: 150px
+        &-right
+          max-width: 200px
+      .header_bottom
+        .container
+          flex-wrap: wrap
+          .header_bottom-left
+            margin-bottom: 20px
+            max-width: 100%
+            align-items: center
+            h3
+              font-size: 26px
+              text-align: center
+              span
+                width: 37px
+                height: 24px
+            p
+              text-align: center
+            .presents
+              width: 200px
+              margin-bottom: 10px
+          .header_bottom-img
+            position: relative
+            margin: 0
+            max-width: 250px
+            img
+              margin-top: 50px
+          .header_bottom-right
+            .block-price
+              width: 100px
+              height: 100px
+              p
+                font-size: 21px
+                padding-right: 15px
+                line-height: 29px
+              span
+                font-size: 9px
+            button
+              margin: 18px 0 14px 0
+            ul
+              li
+                line-height: 18px
+  .content
+    .partners
+      .container
+        p
+          margin-top: 0
+          font-size: 14px
+        .partners_carousel
+          width: 100%
+          padding: 0 20px
+    .media
+      .media_content
+        flex-direction: column
+        align-items: center
+        .item
+          width: 100%
+          height: auto
+          &:nth-child(1), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+            .block-img
+              padding-right: 22%
+          &:nth-child(2)
+            .block-img
+              padding-right: 5%
+          &:nth-child(3)
+            background-color: #cbcbcb
+          &:nth-child(4)
+            background-color: #bbbbbb
+
+  button
+    height: 35px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+  .content
+    .project
+      .project_content
+        flex-direction: column
+        &-left, &-right
+          width: 100%
+          margin-bottom: 20px
+        &-left
+          padding-right: 0
+        &-right
+          order: -1
+          .container
+            max-width: 100%
+            padding: 0
+          .line-links
+            align-items: center
+            justify-content: center
+    .greeting_content
+      .carousel_item
+        .greeting_content-left
+          .top_text
+            margin-bottom: 0
+          .bottom_text
+            a
+              font-size: 12px
+              padding: 3px 5px
+        .greeting_content-right
+          .block-text
+            left: 20px
+            bottom: 20px
+            h4
+              font-size: 20px
+              line-height: 25px
+              margin-bottom: 0
+            p
+              font-size: 16px
+              line-height: 20px
+    .partners_description
+      padding-top: 0
+      height: 100%
+      &:before, &:after
+        display: none
+      .container
+        flex-direction: column
+        padding: 0
+        .partners_description-left, .partners_description-right
+          width: 100%
+          padding: 15px
+          display: flex
+          flex-direction: column
+          align-items: center
+        .partners_description-right
+          background: #fff
+          align-items: center
+          h6
+            text-align: center
+        .partners_description-left
+          background: url("../img/bg2.png") no-repeat
+          .number
+            display: inline-block
+            line-height: 190px
+    .support
+      .container
+        span
+          max-width: 100%
+          font-size: 14px
+          line-height: 18px
+        a
+          font-size: 50px
+          line-height: 60px
+          margin: 10px 0
+          span
+            font-size: 50px
+            line-height: 60px
+    .maps
+      padding: 50px 0
+      p
+        font-size: 16px
+      .container
+        flex-direction: column
+        margin-top: 20px
+        .maps_left, .maps_right
+          width: 100%
+        .maps_left
+          padding-right: 0
+          margin-bottom: 15px
+          display: flex
+          flex-direction: column
+          align-items: center
+          p
+            padding: 0
+            text-align: center
+          button
+            margin: 20px 0 25px 0
+        .maps_right
+          padding-left: 0
+          margin-bottom: 40px
+          p
+            padding: 0
+            &:nth-child(2)
+              margin: 10px 0
+
+  #modal_form, #modal_form2, #modal_form3, #modal_form4, #modal_form5
+    width: 300px
+    left: 0
+    right: 0
+    margin: -300px auto 0
+    h3
+      font-size: 30px
+      line-height: 30px
+    p
+      font-size: 14px
+      line-height: 21px
+      margin-bottom: 15px
+    input
+      height: 30px
+
+  footer
+    .container
+      .footer_content
+        &-center
+          max-width: 340px
+          .top
+            flex-direction: column
+            .address
+              margin-top: 15px
+
+@media screen and (max-width: 700px)
+  .content
+    .medals
+      padding: 50px 0
+      .medals_content
+        flex-direction: column
+        align-items: center
+        padding: 0 15px
+        &-left
+          margin-top: 20px
+          width: 50%
+          img
+            margin-top: 0
+        &-center
+          width: 100%
+          order: -1
+        &-right
+          .block-img
+            max-width: 50%
+            margin: 0 auto
+
+@media screen and (max-width: 640px)
+  .content
+    .greeting_content
+      .carousel_item
+        .greeting_content-left
+          .top_text
+            p
+              font-size: 14px
+              line-height: 20px
+            span
+              font-size: 20px
+              line-height: 30px
+    .traveling
+      h2
+        padding: 0 10px
+        line-height: 50px
+        &:before, &:after
+          display: none
+
+  footer
+    .container
+      flex-direction: column
+      align-items: center
+      .footer_content
+        &-left, &-center
+          margin-bottom: 20px
+          max-width: 100%
+          .logo
+            text-align: center
+        &-center
+          .top
+            flex-direction: row
+            .address
+              margin-top: 0
+              padding-left: 14px
+            .phone
+              a
+                font-size: 16px
+                line-height: 22px
+
+@media only screen and (max-width : 550px)
+  header
+    .wrapper
+      .header_top
+        padding: 10px 15px
+        &-left
+          max-width: 120px
+        &-right
+          max-width: 150px
+          p
+            font-size: 12px
+            line-height: 15px
+          .phone
+            a
+              font-size: 14px
+              line-height: 25px
+      .header_bottom
+        .container
+          .header_bottom-left
+            .presents
+              max-width: 150px
+              font-size: 14px
+              line-height: 18px
+            button
+              width: 200px
+              font-size: 14px
+            p
+              margin: 10px 0 15px 0
+              font-size: 13px
+              line-height: 18px
+          .header_bottom-img
+            max-width: 190px
+          .header_bottom-right
+            a
+              font-size: 14px
+              line-height: 18px
+              max-width: 150px
+            ul
+              li
+                font-size: 13px
+                line-height: 18px
+              span
+                font-size: 29px
+                line-height: 29px
+  .content
+    .greeting_content
+      padding-bottom: 20px
+      .carousel_item
+        flex-direction: column
+        .greeting_content-left, .greeting_content-right
+          width: 100%
+        .greeting_content-left
+          .top_text
+            p
+              font-size: 16px
+              line-height: 22px
+        .greeting_content-right
+          order: -1
+    .support
+      p
+        font-size: 26px
+        line-height: 26px
+      .container
+        margin-top: 25px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  header
+    .wrapper
+      .header_top
+        padding: 0 10px
+        &-left
+          padding-top: 50px
+        &-right
+          padding-top: 55px
+        &-center
+          position: absolute
+          margin: -20px auto 0
+          left: 0
+          right: 0
+          width: 100%
+          background-position: center
+      .header_bottom
+        .container
+          flex-direction: column
+          align-items: center
+          .header_bottom-left
+            h3
+              font-size: 20px
+              line-height: 26px
+          .header_bottom-img
+            max-width: 220px
+            img
+              margin-top: 0
+          .header_bottom-right
+            max-width: 100%
+            margin: 10px 0 0 0
+            .block-price
+              margin: 0 auto
+            button
+              margin: 10px auto
+            ul
+              li
+                span
+                  font-size: 29px
+                  line-height: 28px
+    .block_logo
+      margin: 15px 0 20px
+
+  .content
+    .partners
+      padding-bottom: 40px
+    .support
+      padding: 50px 0 37px 0
+      .container
+        a
+          font-size: 40px
+          span
+            font-size: 40px
+    .maps
+      h2
+        font-size: 37px
+      p
+        padding: 0 10px
+        line-height: 22px
+      .container
+        .maps_left
+          button
+            width: 300px
+            height: auto
+    .media
+      h2
+        padding: 40px 0
+
+  .head_menu
+    .close
+      margin: 25px auto 15px
+      font-size: 18px
+      line-height: 34px
+    ul
+      li
+        a
+          font-size: 14px !important
+          line-height: 18px !important
+          &:nth-child(1)
+            margin-left: 0
+  .traveling
+    .traveling_content
+      .traveling_content-right
+        .block-img
+          width: 100%
+          padding: 0 15px
+          box-sizing: border-box
+
+  h2
+    margin-bottom: 20px
+    font-size: 40px
+    line-height: 50px
+
+@media screen and (max-width: 440px)
+  .content
+    .maps_description
+      h6
+        font-size: 20px
+        line-height: 28px
+      .container
+        flex-direction: column
+        align-items: center
+        .item
+          .block-img
+            height: auto
+    .medals
+      h2
+        line-height: 40px
+        &:before, &:after
+          display: none
+      .medals_content
+        &-center
+          p
+            font-size: 14px
+            line-height: 18px
+          .block-img
+            margin: 15px auto 20px
+        &-right
+          h6
+            margin: 20px auto 10px
+            font-size: 16px
+            line-height: 22px
+    .done
+      .container
+        h3
+          font-size: 20px
+        .carousel_quality
+          .owl-nav
+            .owl-prev
+              right: 7%
+            .owl-next
+              left: 7%
+
+  footer
+    padding: 20px 0 10px 0
+    .container
+      .footer_content
+        &-center
+          margin-bottom: 0
+          .top
+            flex-direction: column
+            .address
+              margin-top: 10px
+
+@media only screen and (max-width : 370px)
+  .content
+    .project
+      .project_content
+        &-right
+          .line-links
+            flex-direction: column
+            align-items: center
+            .presents
+              margin: 0 0 10px 0
+    .support
+      p
+        font-size: 20px
+        line-height: 20px
+      .container
+        a
+          font-size: 35px
+          span
+            font-size: 35px
+        .lang
+          line-height: 26px
+          font-size: 18px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
